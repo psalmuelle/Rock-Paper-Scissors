@@ -17,11 +17,11 @@ replay = True
 while replay:
 
     #User choice get inputted
-    user_choice = input("Pick an option between \"R\", \"P\", and \"S\": ").capitalize()
+    user_choice = input("Pick an option between \"R\" for Rock, \"P\" for Paper, and \"S\" for Scissors: ").capitalize()
 
     #if it does not match with possible_options, it runs into a while loop until it is correct
     while possible_options.count(user_choice) == 0:
-        user_choice = input("User input not among options!\nPick an option between \"R\", \"P\", and \"S\": ").capitalize()
+        user_choice = input("User input not among options!\nPick an option between \"R\" for Rock, \"P\" for Paper, and \"S\" for Scissors: ").capitalize()
 
     #computer or cpu choice get selected with random()
     computer_choice = random.choice(possible_options)
